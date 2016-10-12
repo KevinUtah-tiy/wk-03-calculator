@@ -3,7 +3,7 @@
   margin: 0;
   background-color:lemonchiffon;
   /*display: flex;*/
-  max-width: 100%;
+  max-width: 900px;;
 }
 
 /*@-ms-viewport {
@@ -16,6 +16,7 @@
   justify-content: space-between;
   border-color: red;
   border-radius: 15%;
+  text-align: center;
 }
 
 .calculator {
@@ -27,12 +28,22 @@
   justify-content: space-between;
   font-size: 1.5rem;
   margin: 2.5rem;
+  /*border: 5rem;*/
+  padding: 1.5rem;
 }
 
 .number {
   background-color: burlywood;
+  border: 3px groove chocolate;
+  border-radius: 20%;
+  /*padding: 0.5rem;*/
+  margin: 0.75rem;
 }
 
 .operator {
   background-color: bisque;
+  border: 3px groove tan;
+  border-radius: 20%;
+  /*padding: 0.5rem;*/
+  margin: 0.75rem;
 }
