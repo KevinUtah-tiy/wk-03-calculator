@@ -3,7 +3,9 @@ console.clear();
 // link buttons to an imput
 // window.prompt ('');
 
+
 // check if NaN
+
 function addition (x, y) {
   return x + y;
 }
@@ -25,6 +27,6 @@ function remainder (x, y) {
 }
 
 function calculate (x, y, cb) {
-  console.log (cb(x, y));
+  // console.log (cb(x, y));
   return cb(x, y);
 }
