@@ -24,7 +24,7 @@
         </div>
 
       <div class = "">
-        <input id = "c" type = "button" class = "operator" value = "c" onclick = 'math("c")'>
+        <input id = "AC" type = "button" class = "operator" value = "AC" onclick = 'math("AC")'>
         <input id = "(" type = "button" class = "operator" value = "(" onclick = 'math("(")'>
         <input id = ")" type = "button" class = "operator" value = ")" onclick = 'math(")")'>
         <input id = "%" type = "button" class = "operator" value = "%" onclick = 'math("%")'>
@@ -46,10 +46,10 @@
 
       <div class = "">
         <!-- <button id = "1" onClick = "reply_click()"></button> -->
-        <input id = "1" type = "button" class = "number" value = "1" onlick = 'math("1")'></input>
-        <input id = "2" type = "button" class = "number" value = "2" onclick = 'math("2")'>
-        <input id = "3" type = "button" class = "number" value = "3" onclick = 'math("3")'>
-        <input id = "-" type = "button" class = "operator" value = "-" onclick = 'math("-")'>
+        <input id = "1" type = "button" value = "1" onclick = "userInput(value)">
+        <input id = "2" type = "button" value = "2" onclick = "userInput(value)">
+        <input id = "3" type = "button" value = "3" onclick = "userInput(value)">
+        <input id = "-" type = "button" class = "operator" value = "-" onclick = "userInput(subtraction)">
       </div>
 
       <div class = "">

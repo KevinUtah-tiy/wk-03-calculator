@@ -3,9 +3,15 @@ console.clear();
 // link buttons to an imput
 // window.prompt ('');
 
+var arr = []; //global
 
-// check if NaN
+function userInput (value) {
+  arr.push(value);
+  console.log(arr);
+}
 
+
+/* ----  DO NOTHING TO THESE FUNCTIONS ------- */
 function addition (x, y) {
   return x + y;
 }
@@ -26,7 +32,9 @@ function remainder (x, y) {
   return x % y;
 }
 
-function calculate (x, y, cb) {
+function calculate (x, cb, y) {
   // console.log (cb(x, y));
   return cb(x, y);
 }
+
+// document.getElementById('').onclick = userInput;
