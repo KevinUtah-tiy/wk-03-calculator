@@ -1,7 +1,7 @@
 * {
   border: 0;
   margin: 0;
-  background-color:lemonchiffon;
+  /*background-color:lemonchiffon;*/
   /*display: flex;*/
   max-width: 900px;;
 }
@@ -9,11 +9,33 @@
 /*@-ms-viewport {
   width: device;
 }*/
+.header {
+  /*border: 2px groove red;*/
+  max-width: 100%;
+  text-align: center;
+}
+
+/*main .container{
+  margin: 0;
+}*/
+
+.display {
+  border: 3px groove black;
+  border-radius: 15px;
+  height: 5rem;
+  background-color: cornsilk;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  /*margin: 0;*/
+  /*padding: 0;*/
+}
 
 .container {
+  /*background-color: white;*/
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   border-color: red;
   border-radius: 15%;
   text-align: center;
@@ -21,13 +43,13 @@
 
 .calculator {
   align-items: center;
-  background-color: white;
+  background-color: skyblue ;
   border: black;
   border-style: dotted;
   border-radius: 15%;
   justify-content: space-between;
   font-size: 1.5rem;
-  margin: 2.5rem;
+  margin: 0.75rem;
   /*border: 5rem;*/
   padding: 1.5rem;
 }
@@ -44,6 +66,11 @@
   background-color: bisque;
   border: 3px groove tan;
   border-radius: 20%;
+  font-size: 
   /*padding: 0.5rem;*/
   margin: 0.75rem;
+}
+
+footer {
+
 }
