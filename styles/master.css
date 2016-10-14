@@ -78,6 +78,7 @@
   margin: 0.75rem;
 }
 
-footer {
-  position: sticky;
+.footer {
+  display:  block;
+  /*position: sticky;*/
 }
