@@ -1,3 +1,5 @@
+"use strict";
+
 console.clear();
 
 // link buttons to an imput
@@ -7,7 +9,9 @@ var arr = []; //global
 
 function userInput (value) {
   arr.push(value);
+  // document.getElementByClass('display').innerHTML = arr;
   console.log(arr);
+  console.log(arr[1]);
 }
 
 
@@ -37,4 +41,27 @@ function calculate (x, cb, y) {
   return cb(x, y);
 }
 
-// document.getElementById('').onclick = userInput;
+
+
+function prepCalculate(arr) {
+  calculate(arr[0], arr[1], arr[2]);
+}
+
+function getGuess() {
+  return document.querySelector('input').value;
+}
+/*
+equalFunction() {
+("...") --->xyz
+ans = calculate (x, y, z)
+display(answ)
+}
+*/
+
+// function onPageLoad() {
+//   clearGuess();
+//
+// }
+
+// document.querySelector('button').onclick = onGuessCheck;
+// window.onLoad = onPageLoad;
