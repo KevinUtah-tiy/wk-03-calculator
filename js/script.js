@@ -9,8 +9,11 @@ var arr = []; //global
 
 function userInput (value) {
   arr.push(value);
-  // document.getElementByClass('display').innerHTML = arr;
+
+document.querySelector('.display').innerHTML = arr;
+
   console.log(arr);
+  // return arr;
   console.log(arr[1]);
 }
 
@@ -44,12 +47,19 @@ function calculate (x, cb, y) {
 
 
 function prepCalculate(arr) {
-  calculate(arr[0], arr[1], arr[2]);
+  let x = parseInt(arr[0]);
+  let y = parseInt(arr[2]);
+  if (arr[1] === "+") {
+    calculate(x, addition, y);
+    console.log(calculate (x, addition, y));
+    document.querySelector('.display').innerHTML = calculate (x, addition, y);
+    // calculate(arr[0], arr[1], arr[2]);
+  }
 }
 
-function getGuess() {
-  return document.querySelector('input').value;
-}
+// function getGuess() {
+//   return document.querySelector('input').value;
+// }
 /*
 equalFunction() {
 ("...") --->xyz
