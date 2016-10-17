@@ -49,13 +49,20 @@ function calculate (x, cb, y) {
 function prepCalculate(arr) {
   let x = parseInt(arr[0]);
   let y = parseInt(arr[2]);
+
   if (arr[1] === "+") {
     calculate(x, addition, y);
-    console.log(calculate (x, addition, y));
+    // console.log(calculate (x, addition, y));
     document.querySelector('.display').innerHTML = calculate (x, addition, y);
-    // calculate(arr[0], arr[1], arr[2]);
   }
-}
+  if (arr[1] === "-") {
+      calculate(x, subtraction, y);
+      console.log(calculate (x, subtraction, y));
+      document.querySelector('.display').innerHTML = calculate (x, subtraction, y);
+      console.log(calculate (x, addition, y));
+    }
+  }
+// }
 
 // function getGuess() {
 //   return document.querySelector('input').value;
