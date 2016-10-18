@@ -67,6 +67,10 @@ function prepCalculate(arr) {
       console.log(calculate (x, multiplication, y));
       document.querySelector('.display').innerHTML = calculate (x, multiplication, y);
     } else
+    if (arr[1] === "/") {
+      console.log(calculate (x, division, y));
+      document.querySelector('.display').innerHTML = calculate (x, division, y);
+    } 
 }
 
 // function getGuess() {
