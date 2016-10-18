@@ -54,15 +54,20 @@ function prepCalculate(arr) {
     calculate(x, addition, y);
     // console.log(calculate (x, addition, y));
     document.querySelector('.display').innerHTML = calculate (x, addition, y);
-  }
+  } else
   if (arr[1] === "-") {
+    console.log(calculate (x, addition, y));
       calculate(x, subtraction, y);
       console.log(calculate (x, subtraction, y));
       document.querySelector('.display').innerHTML = calculate (x, subtraction, y);
-      console.log(calculate (x, addition, y));
-    }
-  }
-// }
+    } else
+  if (arr[1] === "*") {
+    console.log(calculate (x, multiplication, y));
+      calculate(x, multiplication, y);
+      console.log(calculate (x, multiplication, y));
+      document.querySelector('.display').innerHTML = calculate (x, multiplication, y);
+    } else
+}
 
 // function getGuess() {
 //   return document.querySelector('input').value;
