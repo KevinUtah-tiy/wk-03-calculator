@@ -2,7 +2,7 @@
 
 console.clear();
 
-// link buttons to an imput
+// link buttons to an input
 // window.prompt ('');
 
 var arr = []; //global
@@ -58,24 +58,28 @@ function prepCalculate(arr) {
   if (arr[1] === "-") {
     console.log(calculate (x, addition, y));
       calculate(x, subtraction, y);
-      console.log(calculate (x, subtraction, y));
+      // console.log(calculate (x, subtraction, y));
       document.querySelector('.display').innerHTML = calculate (x, subtraction, y);
     } else
   if (arr[1] === "*") {
     console.log(calculate (x, multiplication, y));
       calculate(x, multiplication, y);
-      console.log(calculate (x, multiplication, y));
+      // console.log(calculate (x, multiplication, y));
       document.querySelector('.display').innerHTML = calculate (x, multiplication, y);
     } else
     if (arr[1] === "/") {
-      console.log(calculate (x, division, y));
+      // console.log(calculate (x, division, y));
+      calculate (x, division, y);
       document.querySelector('.display').innerHTML = calculate (x, division, y);
-    } 
-}
+    } else
+    if (arr[1] === "%") {
+      // console.log(calculate(x, remainder, y));
+      calculate (x, remainder, y);
+      document.querySelector('.display').innerHTML = calculate (x, remainder, y);
+      }
+    }
 
-// function getGuess() {
-//   return document.querySelector('input').value;
-// }
+
 /*
 equalFunction() {
 ("...") --->xyz

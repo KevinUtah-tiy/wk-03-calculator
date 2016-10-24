@@ -78,6 +78,13 @@
   margin: 0.75rem;
 }
 
+.wip {
+  background-color: skyblue;
+  color: skyblue;
+  font-size: 1rem;
+  margin: 0.75rem;
+}
+
 .footer {
   display:  block;
   /*position: sticky;*/
