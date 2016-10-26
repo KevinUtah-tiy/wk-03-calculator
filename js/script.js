@@ -7,10 +7,46 @@ console.clear();
 
 var arr = []; //global
 
-function userInput (value) {
-  arr.push(value);
+function reduceToOutput (arr) {
+  return arr.reduce(function(previousValue, currentValue) {
+    console.log(previousValue, currentValue);
+    previousValue = previousValue || "";
+    currentValue = previousValue + currentValue;
+    return currentValue;
+  });
+}
 
-document.querySelector('.display').innerHTML = arr;
+function display (value, append) {
+  //append === true append value to the display
+  //append !== true replace display with value
+  var display = document.querySelector('.display');
+  if (!append) {
+    display.innerHTML = value;
+  }
+  else
+  {
+    display.innerHTML += value;
+  }
+}
+
+function userInput (value) {
+
+
+
+
+  // document.querySelector('.display').innerHTML = arr;
+  // function reduceToOutput (arr) {
+  //   return arr.reduce(function(previousValue, currentValue) {
+  //     console.log(previousValue, currentValue);
+  //     previousValue = previousValue || "";
+  //     currentValue = previousValue + currentValue;
+  //     return currentValue;
+  //   });
+  // }
+
+  arr.push(value);
+  let output = reduceToOutput(arr)
+  display(output, false);
 
   console.log(arr);
   // return arr;
@@ -41,7 +77,8 @@ function remainder (x, y) {
 
 function calculate (x, cb, y) {
   // console.log (cb(x, y));
-  return cb(x, y);
+  let result = cb(x, y);
+  display(result, false);
 }
 
 
@@ -51,33 +88,33 @@ function prepCalculate(arr) {
   let y = parseInt(arr[2]);
 
   if (arr[1] === "+") {
-    calculate(x, addition, y);
-    // console.log(calculate (x, addition, y));
-    document.querySelector('.display').innerHTML = calculate (x, addition, y);
+    // display (calculate(x, addition, y));
+    console.log(calculate (x, addition, y));
+    // document.querySelector('.display').innerHTML = calculate (x, addition, y);
   } else
   if (arr[1] === "-") {
-    console.log(calculate (x, addition, y));
+    // display(calculate (x, addition, y));
       calculate(x, subtraction, y);
       // console.log(calculate (x, subtraction, y));
-      document.querySelector('.display').innerHTML = calculate (x, subtraction, y);
+      // document.querySelector('.display').innerHTML = calculate (x, subtraction, y);
     } else
   if (arr[1] === "*") {
     console.log(calculate (x, multiplication, y));
       calculate(x, multiplication, y);
       // console.log(calculate (x, multiplication, y));
-      document.querySelector('.display').innerHTML = calculate (x, multiplication, y);
+      // document.querySelector('.display').innerHTML = calculate (x, multiplication, y);
     } else
     if (arr[1] === "/") {
       // console.log(calculate (x, division, y));
       calculate (x, division, y);
-      document.querySelector('.display').innerHTML = calculate (x, division, y);
+      // document.querySelector('.display').innerHTML = calculate (x, division, y);
     } else
     if (arr[1] === "%") {
       // console.log(calculate(x, remainder, y));
       calculate (x, remainder, y);
-      document.querySelector('.display').innerHTML = calculate (x, remainder, y);
-      }
+      // document.querySelector('.display').innerHTML = calculate (x, remainder, y);
     }
+}
 
 
 /*
