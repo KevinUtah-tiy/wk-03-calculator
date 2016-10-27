@@ -1,15 +1,15 @@
 "use strict";
 
-console.clear();
+console.clear();//clears the console/display for each use
 
 var arr = []; //global
 
 function reduceToOutput (arr) {
   return arr.reduce(function(previousValue, currentValue) {
-    console.log(previousValue, currentValue);
-    previousValue = previousValue || "";
+    console.log(previousValue, currentValue);//shows up on the console what the two input numbers were
+    previousValue = previousValue || "";//the previous value is the same as the previous value or else it is an empty string
     currentValue = previousValue + currentValue;
-    return currentValue;
+    return currentValue;//combining the previous value with the current value for the user to obtain an answer
   });
 }
 
@@ -18,11 +18,11 @@ function display (value, append) {
   //append !== true replace display with value
   var display = document.querySelector('.display');
   if (!append) {
-    display.innerHTML = value;
+    display.innerHTML = value;//beginning value once input by the user
   }
   else
   {
-    display.innerHTML += value;
+    display.innerHTML += value;//the resulting display after commands have been ran
   }
 }
 
